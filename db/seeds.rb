@@ -5,8 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-<<<<<<< HEAD
-=======
 #Name.delete_all to remove anything
 #(1..n).each do |index|
 # Name.create!(att1:value1, att2: value2, att3: value3 ....)  
@@ -31,4 +29,3 @@ index=1
     end
 end
 
->>>>>>> 1412590
