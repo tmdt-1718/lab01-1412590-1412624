@@ -46,7 +46,7 @@ Primary style
   
   -------------------------------- */
   .cd-main-content .content-wrapper {
-	padding: 45px 5% 3em;
+	padding: 45px 5% 3em ;
   }
   .cd-main-content .content-wrapper h1 {
 	text-align: center;
@@ -57,11 +57,19 @@ Primary style
 	/* never visible - used to check MQ in jQuery */
 	display: none;
 	content: 'mobile';
-  }
-  @media only screen and (min-width: 768px) {
+	}
+	@media only screen and (min-width: 768px) {
+			.cd-main-content .content-wrapper {
+				margin-left: 110px;
+				padding-top: 55px;
+				padding: 45px 5% 3em 5%;
+			}		
+	}
+  @media only screen and (min-width: 992px) {
 	.cd-main-content .content-wrapper {
 	  margin-left: 110px;
-	  padding-top: 55px;
+		padding-top: 55px;
+		padding: 45px 5% 3em;
 	}
 	.cd-main-content .content-wrapper h1 {
 	  padding: 4em 0;
@@ -79,7 +87,8 @@ Primary style
 	.cd-main-content::before {
 	  content: 'desktop';
 	}
-  }
+	}
+	
   
   /* -------------------------------- 
   
@@ -103,11 +112,11 @@ Primary style
 	content: "";
 	display: table;
   }
-  @media only screen and (min-width: 768px) {
-	.cd-main-header {
-	  position: fixed;
-	  height: 55px;
-	}
+  @media only screen and (min-width: 992px) {
+		.cd-main-header {
+			position: fixed;
+			height: 55px;
+		}
   }
   
   .cd-logo {
@@ -250,7 +259,7 @@ Primary style
   .cd-search input:focus {
 	outline: none;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
 	.cd-search {
 	  float: left;
 	  display: inline-block;
@@ -301,7 +310,7 @@ Primary style
 	/* top nav - not visible on mobile devices */
 	display: none;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
 	.cd-nav {
 	  display: block;
 	  float: right;
@@ -332,7 +341,7 @@ Primary style
 	border-radius: 50%;
 	display: none;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
 	.cd-top-nav {
 	  height: 100%;
 	}
@@ -495,7 +504,7 @@ Primary style
   }
   @media only screen and (min-width: 768px) {
 	.cd-side-nav {
-	  position: relative;
+	  position: fixed;
 	  float: left;
 	  top: auto;
 	  width: 110px;
@@ -653,7 +662,7 @@ Primary style
 	-o-transform: translateY(-50%) rotate(180deg);
 	transform: translateY(-50%) rotate(180deg);
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
 	.has-children {
 	  position: relative;
 	}
