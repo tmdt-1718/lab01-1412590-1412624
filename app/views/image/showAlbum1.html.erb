@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+            height: 150px;
+        }
+
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ALBUM 1</h1>
+    <table style="width:100%">
+        <tr >
+            <td width="33%">
+                <a >
+                    <%= image_tag("img/img_1")%>
+                </a>
+            </td>
+            <td width="33%">
+                <a >
+                    <%= image_tag("img/img_2")%>
+                </a>
+            </td>
+            <td width="33%">
+                <a>
+                    <%= image_tag("img/img_3")%>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <% (0..2).each do |index|%>
+                <td width="33%">Creator: <%= @images[index].own_user%></td>
+                <% end%>
+
+        </tr>
+        <tr>
+            <% (0..2).each do |index|%>
+                <td width="33%">View: <%= @images[index].total_view%></td>
+                <% end%>
+        </tr>
+    </table>
+</body>
+</html>
