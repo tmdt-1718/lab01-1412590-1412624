@@ -1,18 +1,16 @@
 <h1>BLOGS</h1>
 <div class="row">
-<div class="col-lg-8">
-  <h2>Blog 1</h2>
-  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-  <p><a class="btn btn-primary" role="button" href="#">View details »</a></p>
-</div>
-<div class="col-lg-8">
-  <h2>Heading</h2>
-  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-  <p><a class="btn btn-primary" role="button" href="#">View details »</a></p>
-</div>
-<div class="col-lg-8">
-  <h2>Heading</h2>
-  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-  <p><a class="btn btn-primary" role="button" href="#">View details »</a></p>
+<div class="container">
+<% @blogs.each do |blog| %>
+    <div class="card border-secondary mb-3" style="width: auto;">
+        <img class="card-img-top" style="height: 300px; width: 100%; display: block;" src="<%= blog.thumbnail%>"
+            alt="Card image cap">
+        <div class="card-body">
+            <h3 class="card-title"><%= blog.title%></h3>
+            <p class="card-text"><%= blog.text%></p>
+            <a href="/blogs/<%= blog.id%>" class="btn btn-primary">Go blog</a>
+        </div>    
+    </div>
+    <% end %>
 </div>
 </div>

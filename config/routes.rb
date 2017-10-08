@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/about', to: 'about#index'
   get '/albums', to: 'albums#index'
-  get '/blogs', to: 'blogs#index'
   get '/home', to: 'welcome#index'
+  resources :blogs
 end
