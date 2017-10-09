@@ -1,8 +1,8 @@
 class BlogsController < ApplicationController
     def show
-        @blog = Blog.find(params[:id])
+        @blog = Blog.join(:user).find(params[:id])
     end
     def index
-        @blogs = Blog.all
+        @blogs = Blog.join(:user).all
     end
 end
