@@ -51,6 +51,14 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 Link ảnh GIF demo ứng dụng:
 * Responsive design
 ![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412590-1412624/blob/master/Demo/responsive.gif)
+* Album 
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412590-1412624/blob/master/Demo/album.gif)
+* Blog
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412590-1412624/blob/master/Demo/blog.gif)
+* Login Logout SignUp
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412590-1412624/blob/master/Demo/login%20logout.gif)
+* User Create new blog
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412590-1412624/blob/master/Demo/responsive.gif)
 
 
 ## License
