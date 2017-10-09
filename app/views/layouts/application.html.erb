@@ -13,6 +13,8 @@
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
             <title>Responsive Sidebar Navigation</title>
+        <%= javascript_include_tag('app/assets/javascripts/welcome/main.js') %>
+          <%= javascript_include_tag('app/assets/javascripts/welcome/modernizr.js') %>        
 </head>
 
 <body>
@@ -23,7 +25,7 @@
       </form>
     </div>
     <!-- cd-search -->
-    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+    <a href="#0" class="cd-nav-trigger"></a>
 
     <nav class="cd-nav">
       <ul class="cd-top-nav">
