@@ -6,7 +6,7 @@ Thành viên:
 * [x] **1412624** Nguyễn Quốc Anh Tú (1412624)
 * [x] **1412590** Phan Quốc Trung (1412590)
 
-URL: **URL hosting của bài tập**
+URL: **https://lab01rails.herokuapp.com/**
 
 ## Yêu cầu
 

@@ -7,7 +7,7 @@
             alt="Card image cap">
         <div class="card-body">
             <h3 class="card-title"><%= blog.title%></h3>
-            <p>by <a href="#"><%= blog.user.name%></h3></a></p>
+            <p>by <a href="#"><%= blog.user.name%></h3></a> <span> View: <%= blog.view%></span></p>
             <p class="card-text"><%= truncate(blog.text, length: 500)%></p>
             <a href="/blogs/<%= blog.id%>" class="btn btn-primary">Go blog</a>
         </div>    
