@@ -12,7 +12,7 @@
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
             <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-                <title>Responsive Sidebar Navigation | CodyHouse</title>
+                <title> CodyHouse</title>
 </head>
 
 <body>
@@ -98,7 +98,12 @@
         </ul>
       </nav>
 
+
       <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
+       <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>" role="alert"><%= message %></div>
+       <% end %>
+      
       <%= yield %>
       </main>
     </div>
